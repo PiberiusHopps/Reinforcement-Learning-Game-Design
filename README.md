@@ -4,7 +4,7 @@ The project shows in detail how to build and train a reinforcement learning mode
 ## Table of contents
 - [Features](#features)
 - [Q-Learning](#Q-Learning)
-- [Technical Details](#Technical Details)
+- [Technical Details](#Technical-Details)
 - [Results](#Results)
 
 ## Features
