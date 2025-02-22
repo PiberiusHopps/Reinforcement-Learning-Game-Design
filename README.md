@@ -59,4 +59,5 @@ We initialize a Q-table with dimensions corresponding to the state and action sp
 - **Step 4**: Testing the Trained Agent
 
 ## Results
-![Screenshot of Output Video](output.png)
+![Screenshot of Output Video](Assignment/output.png)
+
