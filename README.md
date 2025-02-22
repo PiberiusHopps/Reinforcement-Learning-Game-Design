@@ -35,7 +35,7 @@ The reward structure for the agent's actions is as follows:
 •	Incorrect drop-off: -10 (a larger penalty for delivering the passenger to the wrong location).
 •	Successful drop-off: +20 (a positive reward for completing the task successfully).
 
-### Q-Learning
+## Q-Learning
 Essentially, Q-learning lets an agent use the rewards from the environment to learn, over time, the best action to take in a given state.
 
 In our Taxi environment, we have a reward table P that the agent will learn from. It does this by looking at the reward it gets for taking an action in the current state, and then updates the Q value to remember whether that action was beneficial or not.
