@@ -5,6 +5,7 @@ The project shows in detail how to build and train a reinforcement learning mode
 - [Features](#features)
 - [Q-Learning](#Q-Learning)
 - [Technical Details](#Technical-Details)
+- [Commands] (#Commands)
 - [Results](#Results)
 
 ## Features
@@ -55,8 +56,20 @@ We initialize a Q-table with dimensions corresponding to the state and action sp
 ## Technical Details
 - **Step 1**: Prepares the environment.
 - **Step 2**: Initialization.
+  ```python
+  command = env = gym.make("Taxi-v3", render_mode="rgb_array").env; state, _ = env.reset()
+
 - **Step 3**: Training the Agent.
-- **Step 4**: Testing the Trained Agent
+  ```python
+  command = q_table = np.zeros([env.observation_space.n, env.action_space.n])
+- **Step 4**: Testing the Trained Agent.
+    ```python
+  command =    while not done: action = np.argmax(q_table[state]); state, reward, done, _, _ = env.step(action); cum_reward += reward; if reward == -10:; num_failed_deliveries += 1
+    
+## Commands
+- **Run Code**: Opens the code in Google Colab and run it.
+- **Process Steps (1-4)**: Train and test the Agent.
+- **Play Processed Video**: Displays the output video after processing is complete.
 
 ## Results
 ![Screenshot of Output Video](Assignment/output.png)
